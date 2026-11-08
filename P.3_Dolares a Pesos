@@ -1,0 +1,23 @@
+/*Nicolas Ventura Lucero
+problema 3*/
+
+#include <stdio.h>
+
+int main() 
+{
+float dolares, pesos;
+const float TIPO_CAMBIO = 11.96; // 1 dolar = 11.96 pesos
+    
+// Entrada de datos
+printf("Ingrese la cantidad en dolares: ");
+scanf("%f", &dolares);
+    
+// Operación de conversión
+pesos = dolares * TIPO_CAMBIO;
+    
+// Salida de resultados
+printf("\n--- Resultado ---\n");
+printf("Equivale a: $%.2f pesos\n", pesos);
+    
+return 0;
+}

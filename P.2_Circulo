@@ -1,0 +1,24 @@
+/* Nicolas Ventura Lucero
+problema 2*/
+
+#include <stdio.h>
+int main ()
+{
+float radio, area, circunferencia;
+const float PI = 3.1416;
+
+//Entrada de Datos 
+printf("Ingrese el radio del circulo: ");
+scanf("%f", &radio);
+
+//Calculos
+area = PI * radio * radio;
+circunferencia = 2 * PI * radio;
+
+//Salida de resultados 
+printf("\n--- Resultados ---\n");
+printf("El area del circulo es: %.2f\n", area);
+printf("La circunferencia es: %.2f\n", circunferencia);
+
+return 0;
+}

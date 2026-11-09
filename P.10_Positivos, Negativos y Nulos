@@ -1,0 +1,38 @@
+/*Nicolas Ventura Lucero 
+Problema 10*/
+
+#include <stdio.h>
+int main() 
+{
+int numero;
+int positivos = 0, negativos = 0, nulos = 0;
+    
+// Estructura repetitiva para leer 100 números
+printf("Ingrese 100 numeros:\n");
+for (int i = 1; i <= 100; i++) 
+{
+printf("Numero %d: ", i);
+scanf("%d", &numero);
+        
+if (numero > 0) 
+{
+positivos++;
+}
+else if (numero < 0) 
+{
+negativos++;
+} 
+else 
+{  
+nulos++;
+}
+}
+
+// Salida de resultados
+printf("\n--- Resultados ---\n");
+printf("Cantidad de positivos: %d\n", positivos);
+printf("Cantidad de negativos: %d\n", negativos);
+printf("Cantidad de nulos (ceros): %d\n", nulos);
+
+return 0;
+}

@@ -1,0 +1,18 @@
+/*Nicolas Ventura Lucero 
+Problema 11*/
+
+#include <stdio.h>
+int main() 
+{
+int suma = 0;
+    
+// Estructura repetitiva para recorrer los números del 10 al 50 de 2 en 2 (solo pares)
+for (int i = 10; i <= 50; i += 2) 
+{
+suma += i;
+}
+
+// Salida del resultado
+printf("La suma de los numeros pares entre 10 y 50 es: %d\n", suma);
+return 0;
+}

@@ -1,0 +1,25 @@
+/*Nicolas Ventura Lucero
+Problema 6*/
+
+#include <stdio.h>
+int main() {
+    float sueldo, nuevo_sueldo;
+    
+    // Entrada de datos
+    printf("Ingrese el sueldo del trabajador: ");
+    scanf("%f", &sueldo);
+    
+    // Condición para el cálculo del aumento
+    if (sueldo < 1000) {
+        nuevo_sueldo = sueldo + (sueldo * 0.15);
+        printf("Se aplicó un aumento del 15%%.\n");
+    } else {
+        nuevo_sueldo = sueldo + (sueldo * 0.12);
+        printf("Se aplicó un aumento del 12%%.\n");
+    }
+    
+    // Salida de resultados
+    printf("El nuevo sueldo es: $%.2f\n", nuevo_sueldo);
+    
+    return 0;
+}

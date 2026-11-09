@@ -1,0 +1,24 @@
+/*Nicolas Ventura Lucero 
+problema 4*/
+
+#include <stdio.h>
+int main() {
+    float capital, tasa, interes, monto_final;
+    
+    // Entrada de datos
+    printf("Ingrese la cantidad de dinero invertida: ");
+    scanf("%f", &capital);
+    printf("Ingrese la tasa de interes mensual (en porcentaje, ej. 5 para 5%%): ");
+    scanf("%f", &tasa);
+    
+    // Cálculos
+    interes = capital * (tasa / 100);
+    monto_final = capital + interes;
+    
+    // Salida de resultados
+    printf("\n--- Resultados ---\n");
+    printf("Interes ganado en el mes: $%.2f\n", interes);
+    printf("Monto total al finalizar el mes: $%.2f\n", monto_final);
+    
+    return 0;
+}

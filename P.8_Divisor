@@ -1,0 +1,36 @@
+/*Nicolas Ventura Lucero 
+Problema 8*/
+
+#include <stdio.h>
+int main() 
+{
+int num1, num2;
+    
+    // Entrada de datos
+printf("Ingrese el primer numero entero: ");
+scanf("%d", &num1);
+printf("Ingrese el segundo numero entero: ");
+scanf("%d", &num2);
+    
+    // Validar que no se divida entre cero
+if (num1 == 0 || num2 == 0) {
+printf("No se puede evaluar la division entre cero.\n");
+} 
+else 
+{
+        // Comprobar si uno es divisor del otro
+if (num2 % num1 == 0) 
+{
+printf("%d es divisor de %d.\n", num1, num2);
+} 
+else if (num1 % num2 == 0) 
+{
+printf("%d es divisor de %d.\n", num2, num1);
+} 
+else 
+{
+printf("Ninguno de los dos numeros es divisor del otro.\n");
+}
+}
+return 0;
+}

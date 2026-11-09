@@ -1,0 +1,20 @@
+/*Nicolas Ventura Lucero 
+Problema 9*/
+
+#include <stdio.h>
+int main() 
+{
+int N;
+
+// Entrada de datos
+printf("Ingrese un numero entero N: ");
+scanf("%d", &N);
+     
+// Estructura repetitiva para la tabla de multiplicar (del 1 al 10)
+printf("\n--- Tabla de multiplicar del %d ---\n", N);
+for (int i = 1; i <= 10; i++) 
+{
+printf("%d x %d = %d\n", N, i, N * i);
+}    
+return 0;
+}

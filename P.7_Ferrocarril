@@ -1,0 +1,32 @@
+/*Nicolas Ventura Lucero 
+Problema 7*/
+
+#include <stdio.h>
+int main() {
+float distancia_ida, distancia_total, precio_total;
+int dias_estancia;
+    
+    // Entrada de datos
+printf("Ingrese la distancia de ida (en km): ");
+scanf("%f", &distancia_ida);
+printf("Ingrese el tiempo de estancia (en dias): ");
+scanf("%d", &dias_estancia);
+    
+    // Calcular distancia total (ida y vuelta)
+distancia_total = distancia_ida * 2;
+    
+    // Calcular precio base (distancia total * $0.23)
+precio_total = distancia_total * 0.23;
+    
+    // Condición: días > 7 y distancia total > 800 km
+if (dias_estancia > 7 && distancia_total > 800) {
+precio_total = precio_total - (precio_total * 0.30);
+printf("¡Se aplico un 30%% de descuento!\n");
+    }
+    
+    // Salida de resultados
+printf("Distancia total: %.2f km\n", distancia_total);
+printf("El precio final del ticket es: $%.2f\n", precio_total);
+    
+return 0;
+}

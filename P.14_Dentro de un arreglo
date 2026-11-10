@@ -1,0 +1,36 @@
+/*Nicolas Ventura Lucero
+Problema 14*/
+
+#include <stdio.h>
+
+int main() {
+    int n, buscado, contador = 0;
+    
+    printf("Ingrese el tamaño del arreglo: ");
+    scanf("%d", &n);
+    
+    int arreglo[n];
+    
+    // Lectura de elementos
+    printf("Ingrese los %d elementos:\n", n);
+    for (int i = 0; i < n; i++) {
+        printf("Elemento %d: ", i + 1);
+        scanf("%d", &arreglo[i]);
+    }
+    
+    // Número a buscar
+    printf("Ingrese el número que desea buscar en el arreglo: ");
+    scanf("%d", &buscado);
+    
+    // Conteo de apariciones
+    for (int i = 0; i < n; i++) {
+        if (arreglo[i] == buscado) {
+            contador++;
+        }
+    }
+    
+    // Salida del resultado
+    printf("\nEl número %d aparece %d vez/veces en el arreglo.\n", buscado, contador);
+    
+    return 0;
+}

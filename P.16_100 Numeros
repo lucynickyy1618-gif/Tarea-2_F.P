@@ -1,0 +1,23 @@
+/*Nicolas Ventura Lucero
+Problema 16*/
+
+#include <stdio.h>
+
+int main() {
+    int pares[100];
+    int numero = 2;
+    
+    // Almacenar los 100 primeros números pares
+    for (int i = 0; i < 100; i++) {
+        pares[i] = numero;
+        numero += 2;
+    }
+    
+    // Imprimir el arreglo completo
+    printf("--- Los 100 primeros números pares ---\n");
+    for (int i = 0; i < 100; i++) {
+        printf("pares[%d] = %d\n", i, pares[i]);
+    }
+    
+    return 0;
+}

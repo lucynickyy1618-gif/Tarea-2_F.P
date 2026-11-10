@@ -1,0 +1,26 @@
+/*Nicolas Ventura Lucero
+Problema 12*/
+#include <stdio.h>
+int main() {
+    int N;
+    long long producto = 1; 
+    
+    // Entrada de datos
+    printf("Ingrese el valor de N (cantidad de primeros numeros naturales): ");
+    scanf("%d", &N);
+    
+    // Validación para asegurar que N sea mayor que 0
+    if (N <= 0) {
+        printf("Por favor, ingrese un numero entero positivo.\n");
+    } else {
+        // Estructura repetitiva para calcular el producto (factorial)
+        for (int i = 1; i <= N; i++) {
+            producto *= i;
+        }
+        
+        // Salida de resultados
+        printf("El producto de los primeros %d numeros naturales es: %lld\n", N, producto);
+    }
+    
+    return 0;
+}
